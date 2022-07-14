@@ -6,7 +6,7 @@ const GalleryComposition = (props) => (
   <Carousel showArrows={true}>
     {props.images.map(({ caption, image }) => (
       <div key={caption}>
-        <img {...image.childImageSharp.fluid} alt={caption} />
+        <img {...image.childImageSharp.constrained} alt={caption} />
         <p className="legend">{caption}</p>
       </div>
     ))}
