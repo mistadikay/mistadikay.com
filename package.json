@@ -19,7 +19,7 @@
     "camelcase": "^6.2.0",
     "classnames": "^2.2.6",
     "dashify": "^2.0.0",
-    "firebase-tools": "^9.1.0",
+    "firebase-tools": "^11.2.2",
     "gatsby": "^3.3.1",
     "gatsby-image": "^3.3.0",
     "gatsby-plugin-catch-links": "^3.3.0",
@@ -38,10 +38,10 @@
     "rimraf": "^3.0.2"
   },
   "devDependencies": {
-    "eslint": "^7.16.0",
+    "eslint": "^8.19.0",
     "eslint-plugin-react": "^7.21.5",
     "prettier": "^2.2.1",
-    "stylelint": "^13.8.0",
-    "stylelint-config-standard": "^22.0.0"
+    "stylelint": "^14.9.1",
+    "stylelint-config-standard": "^26.0.0"
   }
 }
