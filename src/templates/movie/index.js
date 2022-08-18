@@ -41,7 +41,7 @@ const MoviePageTemplate = ({ data, location }) => {
       post = (
         <div className={s.movies}>
           {frontmatter.movies.map((movie) => {
-            const movieClassName = `cover_${camelCase(movie).replace(":", "")}`;
+            const movieClassName = `cover-${camelCase(movie).replace(":", "")}`;
             const movieLink = `/movies/${dashify(movie)}/`;
 
             return (
@@ -66,9 +66,9 @@ const MoviePageTemplate = ({ data, location }) => {
       <div className={s.root}>
         <div className={s.body}>
           <div className={s.content}>
-            <div className={s.contentInner}>
+            <div className={s.inner}>
               <Helmet title={`${title} | ${site.siteMetadata.title}`} />
-              <Link className={s.backLink} to={backPath}>
+              <Link className={s.back} to={backPath}>
                 back
               </Link>
               <h1>{title}</h1>
@@ -80,7 +80,7 @@ const MoviePageTemplate = ({ data, location }) => {
           <source src={bgWEBM} type="video/webm" />
           <source src={bgMP4} type="video/mp4" />
         </video>
-        <div className={s.bgOverlay} />
+        <div className={s.overlay} />
       </div>
     </Layout>
   );
