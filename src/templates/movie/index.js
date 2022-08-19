@@ -41,7 +41,7 @@ const MoviePageTemplate = ({ data, location }) => {
       post = (
         <div className={s.movies}>
           {frontmatter.movies.map((movie) => {
-            const movieClassName = `cover-${camelCase(movie).replace(":", "")}`;
+            const movieClassName = camelCase(movie).replace(":", "");
             const movieLink = `/movies/${dashify(movie)}/`;
 
             return (
