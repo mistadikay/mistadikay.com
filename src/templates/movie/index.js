@@ -105,12 +105,7 @@ export const pageQuery = graphql`
           caption
           image {
             childImageSharp {
-              fluid {
-                src
-                srcSet
-                sizes
-                aspectRatio
-              }
+              gatsbyImageData(layout: FULL_WIDTH)
             }
           }
         }

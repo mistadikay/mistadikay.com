@@ -19,12 +19,7 @@ exports.createPages = async ({ graphql, actions }) => {
                   caption
                   image {
                     childImageSharp {
-                      fluid {
-                        src
-                        srcSet
-                        sizes
-                        aspectRatio
-                      }
+                      gatsbyImageData(layout: FULL_WIDTH)
                     }
                   }
                 }
