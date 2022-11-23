@@ -19,7 +19,6 @@
     "camelcase": "^6.2.0",
     "classnames": "^2.2.6",
     "dashify": "^2.0.0",
-    "firebase-tools": "^11.2.2",
     "gatsby": "^5.1.0",
     "gatsby-plugin-catch-links": "^5.1.0",
     "gatsby-plugin-google-analytics": "^5.1.0",
