@@ -12,6 +12,7 @@ const Layout = ({ children }) => (
         content="VaTl-665VAXK5f8XfQqBeAyYW71Y91rhpF4AvwsBVZY"
       />
       <link rel="icon" type="image/png" href={favicon} />
+      <link href="https://mastodon.social/@mistadikay" rel="me" />
       <style type="text/css">
         {`
         html,
