@@ -34,7 +34,7 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-responsive-carousel": "^3.2.18",
-    "rimraf": "^3.0.2"
+    "rimraf": "^4.0.0"
   },
   "devDependencies": {
     "eslint": "^8.19.0",
