@@ -11,7 +11,7 @@ import github from "./images/icons/github.svg";
 import instagram from "./images/icons/instagram.svg";
 import linkedin from "./images/icons/linkedin.svg";
 import medium from "./images/icons/medium.svg";
-import skype from "./images/icons/skype.svg";
+import mastodon from "./images/icons/mastodon.svg";
 import twitter from "./images/icons/twitter.svg";
 import movie from "./images/icons/movie.svg";
 import film from "./images/icons/film.svg";
@@ -24,10 +24,10 @@ const links = [
     icon: email,
   },
   {
-    type: "skype",
-    title: "Skype",
-    href: "skype:mr_di_kay?call",
-    icon: skype,
+    type: "mastodon",
+    title: "Mastodon",
+    href: "https://mastodon.social/@mistadikay",
+    icon: mastodon,
   },
   {
     type: "linkedin",
@@ -92,6 +92,7 @@ const App = () => (
                 {...link}
                 className={classNames(s.link, s[type])}
                 style={{ backgroundImage: `url("${icon}")` }}
+                rel="me"
                 key={type}
               >
                 {link.title}
