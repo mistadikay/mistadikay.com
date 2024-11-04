@@ -73,18 +73,18 @@
           height: auto;
       }
 
-      header .name {
+      .name {
           font-size: 2.2em;
           font-weight: 700;
       }
 
-      header .title {
+      .title {
           font-size: 1.25em;
           font-weight: 400;
           margin-bottom: 12px;
       }
 
-      section.description {
+      .description {
           font-size: 0.9em;
           line-height: 1.5;
           margin-bottom: 16px;
@@ -99,14 +99,14 @@
           margin-top: 10px;
       }
 
-      footer .social-icons a {
+      .social-icons a {
           width: 32px;
           height: 32px;
           text-decoration: none;
           font-size: 1.2em;
       }
 
-      footer .social-icons a:hover {
+      .social-icons a:hover {
           color: #0077b5;
       }
 
@@ -147,15 +147,14 @@
       }
 
       @media (width <= 600px) {
-          main {
-              width: 90%;
-              padding: 15px;
+          .name {
+              font-size: 2em;
           }
-          header .name {
-              font-size: 1.3em;
+          .title {
+              font-size: 1em;
           }
-          header .title, section.description {
-              font-size: 0.9em;
+          .description {
+              padding: 0 15px;
           }
       }
   </style>
