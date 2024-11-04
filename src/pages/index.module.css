@@ -45,7 +45,7 @@
   background-color: #000;
 }
 
-@media (max-width: 570px) {
+@media (width >= 570px) {
   .body {
     flex-direction: column;
   }
