@@ -18,179 +18,176 @@
 
   <title>Denis Koltsov - Back End Engineer, Tech Lead</title>
   <style>
-      * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-      }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Asap", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: normal;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+      background: url('images/background.jpg') no-repeat 50% 50%;
+      background-size: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      min-height: 100vh;
+      color: #fff;
+    }
+    .backdrop {
+      background: rgba(0, 0, 0, 0.4);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .main {
+      background: rgba(128, 128, 128, 0.2);
+      width: 90%;
+      max-width: 514px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      box-shadow: 2px 2px 12px 3px rgba(26, 56, 56, 0.3);
+    }
+    .main p {
+      padding: 0.5em 0;
+    }
+    .profile-image {
+      width: 115px;
+      height: 115px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 40px auto 16px;
+      border: 1px solid #fff;
+    }
+    .profile-image img {
+      width: 100%;
+      height: auto;
+    }
+    .name {
+      font-size: 2.2em;
+      font-weight: 700;
+    }
+    .title {
+      font-size: 1.25em;
+      font-weight: 400;
+      margin-bottom: 12px;
+    }
+    .description {
+      font-size: 0.9em;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+    .links {
+      background: #fff;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 75px;
+      margin-top: 10px;
+    }
+    .links a {
+      width: 32px;
+      height: 32px;
+      background-size: 100%;
+    }
+    .links a:hover {
+      color: #0077b5;
+    }
+    .email {
+      background-image: url('images/email.svg');
+    }
+    .blog {
+      background-image: url('images/blog.svg');
+    }
+    .linkedin {
+      background-image: url('images/linkedin.svg');
+    }
+    .github {
+      background-image: url('images/github.svg');
+    }
+    .mastodon {
+      background-image: url("images/mastodon.svg");
+    }
+    .x {
+      background-image: url("images/x.svg");
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @supports (-webkit-touch-callout: none) {
       body {
-          font-family: "Asap", sans-serif;
-          font-optical-sizing: auto;
-          font-weight: normal;
-          font-style: normal;
-          font-variation-settings: "wdth" 100;
-          background: url('images/background.jpg') no-repeat 50% 50%;
-          background-size: inherit;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 100vw;
-          min-height: 100vh;
-          color: #fff;
+        min-height: -webkit-fill-available;
       }
-      .backdrop {
-          background: rgba(0, 0, 0, 0.4);
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          top: 0;
-          left: 0;
-      }
-      main {
-          background: rgba(128, 128, 128, 0.2);
-          width: 90%;
-          max-width: 514px;
-          text-align: center;
-          backdrop-filter: blur(10px);
-          box-shadow: 2px 2px 12px 3px rgba(26, 56, 56, 0.3);
-      }
-      p {
-          padding: 0.5em 0;
-      }
-      .profile-image {
-          width: 115px;
-          height: 115px;
-          border-radius: 50%;
-          overflow: hidden;
-          margin: 40px auto 16px;
-          border: 1px solid #fff;
-      }
-      .profile-image img {
-          width: 100%;
-          height: auto;
-      }
+    }
+
+    @media (width <= 600px) {
       .name {
-          font-size: 2.2em;
-          font-weight: 700;
+        font-size: 2em;
       }
       .title {
-          font-size: 1.25em;
-          font-weight: 400;
-          margin-bottom: 12px;
+        font-size: 1em;
       }
       .description {
-          font-size: 0.9em;
-          line-height: 1.5;
-          margin-bottom: 16px;
+        padding: 0 15px;
       }
-      .social-icons {
-          background: #fff;
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center;
-          height: 75px;
-          margin-top: 10px;
-      }
-      .social-icons a {
-          width: 32px;
-          height: 32px;
-          background-size: 100%;
-      }
-      .social-icons a:hover {
-          color: #0077b5;
-      }
-      .email {
-          background-image: url('images/email.svg');
-      }
-      .blog {
-          background-image: url('images/blog.svg');
-      }
-      .linkedin {
-          background-image: url('images/linkedin.svg');
-      }
-      .github {
-          background-image: url('images/github.svg');
-      }
-      .mastodon {
-          background-image: url("images/mastodon.svg");
-      }
-      .x {
-          background-image: url("images/x.svg");
-      }
-      .sr-only {
-          position: absolute;
-          width: 1px;
-          height: 1px;
-          padding: 0;
-          margin: -1px;
-          overflow: hidden;
-          clip: rect(0, 0, 0, 0);
-          white-space: nowrap;
-          border: 0;
-      }
+    }
 
-      @supports (-webkit-touch-callout: none) {
-        body {
-          min-height: -webkit-fill-available;
-        }
+    @media (height <= 600px) {
+      .main {
+        display: flex;
+        width: auto;
       }
-
-      @media (width <= 600px) {
-          .name {
-              font-size: 2em;
-          }
-          .title {
-              font-size: 1em;
-          }
-          .description {
-              padding: 0 15px;
-          }
+      .main p {
+        padding: 0.25em 0;
       }
-
-      @media (height <= 600px) {
-          main {
-              display: flex;
-              width: auto;
-          }
-          p {
-              padding: 0.25em 0;
-          }
-          .social-icons {
-              height: 45px;
-          }
-          .social-icons a {
-              width: 24px;
-              height: 24px;
-          }
-          .name {
-              font-size: 1.4em;
-          }
-          .title {
-              font-size: 1em;
-          }
-          .description {
-              font-size: 0.8em;
-              padding: 0 25px;
-          }
-          .profile-image {
-              width: 80px;
-              height: 80px;
-              margin-top: 20px;
-          }
-          .social-icons {
-              flex-direction: column;
-              height: 100%;
-              margin-top: 0;
-              width: 75px;
-          }
+      .profile-image {
+        width: 80px;
+        height: 80px;
+        margin-top: 20px;
       }
+      .name {
+        font-size: 1.4em;
+      }
+      .title {
+        font-size: 1em;
+      }
+      .description {
+        font-size: 0.8em;
+        padding: 0 25px;
+      }
+      .links {
+        flex-direction: column;
+        height: 100%;
+        margin-top: 0;
+        width: 75px;
+      }
+      .links a {
+        width: 24px;
+        height: 24px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="backdrop"></div>
-  <main role="main">
+  <main role="main" class="main">
     <div class="profile" aria-label="Profile">
-      <header aria-label="Profile Header">
+      <header aria-label="Profile Header" class="profile-header">
         <div class="profile-image">
           <img width="1000" height="1000" src="images/profile.webp" alt="Profile picture of Denis Koltsov">
         </div>
@@ -211,8 +208,8 @@
       </section>
     </div>
 
-    <footer aria-label="Contact and Social Links">
-      <nav class="social-icons" aria-label="Social media links">
+    <footer aria-label="Contact and Social Links" class="footer">
+      <nav class="links" aria-label="Social media links">
         <a href="mailto:denis@koltsov.se" aria-label="Send an email" title="Email" class="email">
           <span class="sr-only">Email</span>
         </a>
