@@ -36,7 +36,6 @@
           justify-content: center;
           width: 100vw;
           min-height: 100vh;
-          min-height: -webkit-fill-available;
           color: #fff;
       }
       .backdrop {
@@ -128,6 +127,12 @@
           clip: rect(0, 0, 0, 0);
           white-space: nowrap;
           border: 0;
+      }
+
+      @supports (-webkit-touch-callout: none) {
+        body {
+          min-height: -webkit-fill-available;
+        }
       }
 
       @media (width <= 600px) {
